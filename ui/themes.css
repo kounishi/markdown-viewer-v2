@@ -1,0 +1,105 @@
+/* ===== 配色プリセット 9 種 (参考アプリ Theme.cs の色値を継承) + 構文ハイライト用トークン色 =====
+   --window-*: ツールバー/タブ/ステータスバー、--content-*: 本文、--hl-*: highlight.js のトークン */
+
+:root, :root[data-theme="light"] {
+  color-scheme: light;
+  --window-bg: #F3F3F3; --window-fg: #1A1A1A; --control-bg: #FFFFFF; --hover-bg: #E9E9E9;
+  --border: #D0D0D0; --accent: #0067C0;
+  --content-bg: #FFFFFF; --content-fg: #24292F; --heading: #1F2328; --link: #0969DA; --muted: #656D76;
+  --code-bg: #F6F8FA; --content-border: #D0D7DE; --quote: #D0D7DE;
+  /* GitHub Light */
+  --hl-comment: #59636E; --hl-keyword: #CF222E; --hl-string: #0A3069; --hl-number: #0550AE;
+  --hl-title: #8250DF; --hl-attr: #0550AE; --hl-type: #953800; --hl-meta: #0550AE; --hl-tag: #116329;
+  --hl-variable: #953800; --hl-addition: #116329; --hl-addition-bg: #DAFBE1; --hl-deletion: #82071E; --hl-deletion-bg: #FFEBE9;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --window-bg: #1F1F1F; --window-fg: #E8E8E8; --control-bg: #2B2B2B; --hover-bg: #3A3A3A;
+  --border: #3F3F3F; --accent: #4CC2FF;
+  --content-bg: #0D1117; --content-fg: #E6EDF3; --heading: #F0F6FC; --link: #4493F8; --muted: #9198A1;
+  --code-bg: #161B22; --content-border: #30363D; --quote: #3B434B;
+  /* GitHub Dark */
+  --hl-comment: #8B949E; --hl-keyword: #FF7B72; --hl-string: #A5D6FF; --hl-number: #79C0FF;
+  --hl-title: #D2A8FF; --hl-attr: #79C0FF; --hl-type: #FFA657; --hl-meta: #79C0FF; --hl-tag: #7EE787;
+  --hl-variable: #FFA657; --hl-addition: #AFF5B4; --hl-addition-bg: #033A16; --hl-deletion: #FFDCD7; --hl-deletion-bg: #67060C;
+}
+
+:root[data-theme="sepia"] {
+  color-scheme: light;
+  --window-bg: #E5D9BE; --window-fg: #4A3B2A; --control-bg: #F2E9D3; --hover-bg: #DCCFA9;
+  --border: #C9B98F; --accent: #A15C2F;
+  --content-bg: #F5EDDA; --content-fg: #4C3E2E; --heading: #3B2F20; --link: #9C4F1E; --muted: #8A7A5F;
+  --code-bg: #EAE0C6; --content-border: #D6C69E; --quote: #C9B583;
+  /* Gruvbox Light 系 */
+  --hl-comment: #8A7A5F; --hl-keyword: #9D0006; --hl-string: #79740E; --hl-number: #8F3F71;
+  --hl-title: #B57614; --hl-attr: #076678; --hl-type: #AF3A03; --hl-meta: #427B58; --hl-tag: #79740E;
+  --hl-variable: #AF3A03; --hl-addition: #79740E; --hl-addition-bg: #E6E9C6; --hl-deletion: #9D0006; --hl-deletion-bg: #F2D5C9;
+}
+
+:root[data-theme="solarized-light"] {
+  color-scheme: light;
+  --window-bg: #EEE8D5; --window-fg: #586E75; --control-bg: #FDF6E3; --hover-bg: #E4DCC3;
+  --border: #D3CBB7; --accent: #268BD2;
+  --content-bg: #FDF6E3; --content-fg: #657B83; --heading: #586E75; --link: #268BD2; --muted: #93A1A1;
+  --code-bg: #EEE8D5; --content-border: #DDD6C1; --quote: #93A1A1;
+  --hl-comment: #93A1A1; --hl-keyword: #859900; --hl-string: #2AA198; --hl-number: #D33682;
+  --hl-title: #268BD2; --hl-attr: #B58900; --hl-type: #B58900; --hl-meta: #CB4B16; --hl-tag: #268BD2;
+  --hl-variable: #CB4B16; --hl-addition: #859900; --hl-addition-bg: #E8EDD0; --hl-deletion: #DC322F; --hl-deletion-bg: #F6DAD4;
+}
+
+:root[data-theme="solarized-dark"] {
+  color-scheme: dark;
+  --window-bg: #073642; --window-fg: #93A1A1; --control-bg: #0B4250; --hover-bg: #16525F;
+  --border: #1A5866; --accent: #268BD2;
+  --content-bg: #002B36; --content-fg: #839496; --heading: #93A1A1; --link: #268BD2; --muted: #586E75;
+  --code-bg: #073642; --content-border: #0E4B5A; --quote: #586E75;
+  --hl-comment: #586E75; --hl-keyword: #859900; --hl-string: #2AA198; --hl-number: #D33682;
+  --hl-title: #268BD2; --hl-attr: #B58900; --hl-type: #B58900; --hl-meta: #CB4B16; --hl-tag: #268BD2;
+  --hl-variable: #CB4B16; --hl-addition: #859900; --hl-addition-bg: #103B2A; --hl-deletion: #DC322F; --hl-deletion-bg: #4A2226;
+}
+
+:root[data-theme="nord"] {
+  color-scheme: dark;
+  --window-bg: #3B4252; --window-fg: #ECEFF4; --control-bg: #434C5E; --hover-bg: #4C566A;
+  --border: #4C566A; --accent: #88C0D0;
+  --content-bg: #2E3440; --content-fg: #D8DEE9; --heading: #ECEFF4; --link: #88C0D0; --muted: #8892A8;
+  --code-bg: #3B4252; --content-border: #434C5E; --quote: #5E81AC;
+  --hl-comment: #616E88; --hl-keyword: #81A1C1; --hl-string: #A3BE8C; --hl-number: #B48EAD;
+  --hl-title: #88C0D0; --hl-attr: #8FBCBB; --hl-type: #8FBCBB; --hl-meta: #5E81AC; --hl-tag: #81A1C1;
+  --hl-variable: #D8DEE9; --hl-addition: #A3BE8C; --hl-addition-bg: #2E3F33; --hl-deletion: #BF616A; --hl-deletion-bg: #4A2F33;
+}
+
+:root[data-theme="dracula"] {
+  color-scheme: dark;
+  --window-bg: #21222C; --window-fg: #F8F8F2; --control-bg: #343746; --hover-bg: #44475A;
+  --border: #44475A; --accent: #BD93F9;
+  --content-bg: #282A36; --content-fg: #F8F8F2; --heading: #BD93F9; --link: #8BE9FD; --muted: #6272A4;
+  --code-bg: #343746; --content-border: #44475A; --quote: #6272A4;
+  --hl-comment: #6272A4; --hl-keyword: #FF79C6; --hl-string: #F1FA8C; --hl-number: #BD93F9;
+  --hl-title: #50FA7B; --hl-attr: #50FA7B; --hl-type: #8BE9FD; --hl-meta: #FFB86C; --hl-tag: #FF79C6;
+  --hl-variable: #F8F8F2; --hl-addition: #50FA7B; --hl-addition-bg: #2C4635; --hl-deletion: #FF5555; --hl-deletion-bg: #4D2A2F;
+}
+
+:root[data-theme="forest"] {
+  color-scheme: dark;
+  --window-bg: #24352C; --window-fg: #DCE9E0; --control-bg: #2E4237; --hover-bg: #3A5044;
+  --border: #3E5449; --accent: #7FCE9C;
+  --content-bg: #1B2A22; --content-fg: #D3E3D8; --heading: #EAF5EE; --link: #86D9A5; --muted: #8FA89A;
+  --code-bg: #253B2F; --content-border: #37503F; --quote: #5F8A70;
+  /* Everforest 系 */
+  --hl-comment: #859289; --hl-keyword: #E67E80; --hl-string: #A7C080; --hl-number: #D699B6;
+  --hl-title: #83C092; --hl-attr: #DBBC7F; --hl-type: #DBBC7F; --hl-meta: #E69875; --hl-tag: #E67E80;
+  --hl-variable: #D3C6AA; --hl-addition: #A7C080; --hl-addition-bg: #2B4034; --hl-deletion: #E67E80; --hl-deletion-bg: #4A3034;
+}
+
+:root[data-theme="high-contrast"] {
+  color-scheme: dark;
+  --window-bg: #000000; --window-fg: #FFFFFF; --control-bg: #101010; --hover-bg: #1F1F1F;
+  --border: #FFFFFF; --accent: #FFFF00;
+  --content-bg: #000000; --content-fg: #FFFFFF; --heading: #FFFFFF; --link: #FFFF00; --muted: #C0C0C0;
+  --code-bg: #121212; --content-border: #FFFFFF; --quote: #00FFFF;
+  --hl-comment: #B0B0B0; --hl-keyword: #FFFF00; --hl-string: #00FF7F; --hl-number: #FF9F1C;
+  --hl-title: #00FFFF; --hl-attr: #FFD700; --hl-type: #FF69B4; --hl-meta: #FF9F1C; --hl-tag: #00FFFF;
+  --hl-variable: #FFFFFF; --hl-addition: #00FF00; --hl-addition-bg: #003300; --hl-deletion: #FF4040; --hl-deletion-bg: #330000;
+}

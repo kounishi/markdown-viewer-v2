@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "MarkdownViewer",
+  "mainBinaryName": "MarkdownViewer",
+  "version": "2.0.0",
+  "identifier": "jp.ne.njs.markdown-viewer",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Markdown Viewer",
+        "width": 1100,
+        "height": 800,
+        "minWidth": 480,
+        "minHeight": 360,
+        "center": true,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: http://mdfile.localhost mdfile: https: http:; font-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; frame-src 'none'; form-action 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "appimage"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Productivity",
+    "shortDescription": "Lightweight Markdown viewer",
+    "longDescription": "参考アプリ markdown-viewer (WPF) の機能を継承した、OS 標準 WebView を使う超軽量 Markdown ビューアー。",
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    }
+  }
+}

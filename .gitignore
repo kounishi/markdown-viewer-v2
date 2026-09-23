@@ -1,0 +1,10 @@
+# Node (Tauri CLI のみ)
+node_modules/
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# OS
+.DS_Store
+Thumbs.db

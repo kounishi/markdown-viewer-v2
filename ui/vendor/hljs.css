@@ -1,0 +1,62 @@
+/* highlight.js のスコープを配色プリセットの --hl-* 変数に紐づける (themes.css でテーマごとに定義) */
+
+.hljs { color: inherit; background: transparent; }
+
+.hljs-comment,
+.hljs-quote { color: var(--hl-comment); font-style: italic; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-name { color: var(--hl-keyword); }
+
+.hljs-string,
+.hljs-regexp,
+.hljs-char.escape_ { color: var(--hl-string); }
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link { color: var(--hl-number); }
+
+.hljs-title,
+.hljs-title.function_,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-section { color: var(--hl-title); }
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-property { color: var(--hl-attr); }
+
+.hljs-type,
+.hljs-built_in,
+.hljs-class { color: var(--hl-type); }
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string { color: var(--hl-meta); }
+
+.hljs-tag { color: var(--hl-tag); }
+.hljs-tag .hljs-name { color: var(--hl-tag); }
+.hljs-tag .hljs-attr { color: var(--hl-attr); }
+.hljs-template-tag { color: var(--hl-tag); }
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-variable.language_,
+.hljs-params,
+.hljs-operator,
+.hljs-punctuation { color: var(--hl-variable); }
+
+.hljs-addition { color: var(--hl-addition); background: var(--hl-addition-bg); }
+.hljs-deletion { color: var(--hl-deletion); background: var(--hl-deletion-bg); }
+
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }
+.hljs-subst { color: inherit; }

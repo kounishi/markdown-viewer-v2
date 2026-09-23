@@ -1,0 +1,14 @@
+{
+  "name": "markdown-viewer-v2",
+  "version": "2.0.0",
+  "description": "Lightweight Markdown viewer (Tauri v2)",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build --no-bundle",
+    "tauri": "tauri"
+  },
+  "private": true,
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.5"
+  }
+}

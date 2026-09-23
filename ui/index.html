@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown Viewer</title>
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="themes.css">
+<link rel="stylesheet" href="vendor/hljs.css">
+</head>
+<body>
+
+<header id="toolbar">
+  <div class="group">
+    <button id="btn-open" class="tool" type="button">開く...</button>
+    <button id="btn-reload" class="tool" type="button">再読み込み</button>
+    <button id="btn-search" class="tool" type="button" aria-pressed="false" aria-controls="searchbar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/></svg>
+      <span>検索</span>
+    </button>
+  </div>
+  <div class="group">
+    <label for="theme-select">配色:</label>
+    <select id="theme-select"></select>
+  </div>
+</header>
+
+<nav id="tabstrip" role="tablist" hidden></nav>
+
+<div id="searchbar" role="search" hidden>
+  <label for="search-input">検索:</label>
+  <input id="search-input" type="text" spellcheck="false" autocomplete="off"
+         title="表示中のページ内を検索 (Enter: 次へ / Shift+Enter: 前へ / Esc: 閉じる)">
+  <span id="search-count" aria-live="polite"></span>
+  <button id="search-prev" class="tool small" type="button" title="前を検索 (Shift+Enter / Shift+F3)">▲</button>
+  <button id="search-next" class="tool small" type="button" title="次を検索 (Enter / F3)">▼</button>
+  <button id="search-close" class="close" type="button" title="検索を閉じる (Esc)">✕</button>
+</div>
+
+<main id="content">
+  <div id="welcome" class="pane" tabindex="-1"><article class="markdown-body"></article></div>
+</main>
+
+<footer id="statusbar">
+  <span id="status-text">ファイルを開くか、ここへドラッグ＆ドロップしてください</span>
+  <span id="status-right"><span id="status-encoding"></span><span id="status-zoom"></span></span>
+</footer>
+
+<div id="drop-overlay" hidden><div class="drop-box">ここにドロップして開く</div></div>
+
+<script src="vendor/highlight.min.js"></script>
+<script src="vendor/powershell.min.js"></script>
+<script src="search.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
